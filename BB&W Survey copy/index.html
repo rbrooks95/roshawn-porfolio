@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div>
+      <header class="title">
+        <h1 id="title">BB&W survey</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        
+        <form id="survey-form">
+          <div>
+              <label id="name-label"for="name">Name</label> <br>
+  <input placeholder="Name" type="text" id="name" class="form" required> 
+          </div>
+          <div>
+             <label id="email-label"for="email">Email</label><br>
+  <input placeholder="Email" type="email" id="email" class="form" required>
+          </div>
+          <div>
+             <label id="number-label" for="age">Age (optional)</label><br>
+  <input placeholder="Age" type="number" id="number" min="15" max="99" class="form">
+          </div>
+          <div>
+            <p>Which option best describes your current role?</p>
+            
+<select name="cars" id="dropdown" class="form">
+            <option value="" disabled selected hidden>Please Choose...</option>
+    <option value="volvo">Director</option>
+    <option value="saab">Contractor</option>
+    <option value="opel">Project Manager </option>
+    <option value="audi">Civilian</option>
+    <option value="audi">Operations</option>
+  </select>
+            <div>
+              <div>
+                <p>Would you recommend BB&W to a friend?</p>
+                <label>Definately</label>
+                <input name="maybe" type="radio" value="definately"> <br>
+                 <label>Maybe</label>
+                <input name="maybe" type="radio" value="maybe"> <br>
+                 <label>Not sure</label>
+                <input name="maybe" type="radio" value="not-sure"> 
+              </div>
+              <div>
+                <p>What is your favorite feature of BB&W?</p>
+                 <select name="cars" id="dropdown" class="form">
+            <option value="" disabled selected hidden>Please Choose...</option>
+    <option value="volvo">Renovations</option>
+    <option value="saab">Roads</option>
+    <option value="opel">Mining</option>
+    <option value="audi">Schools</option>
+  </select>
+              </div>
+              <div>
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label>Communication
+                  <input           value="front-end"    type="checkbox">
+                </label><br>
+                <label>Contracts
+                  <input value="front-end"              type="checkbox">
+                </label><br>
+                <label>Projects
+                  <input value="front-end"                type="checkbox">
+                </label><br>
+                <label>Data Visualization
+                  <input value="front-end"                type="checkbox" >
+                </label><br>
+                <label>Safety
+                  <input value="front-end" "               type="checkbox">
+                </label><br>
+                <label> Other
+                  <input value="front-end"                type="checkbox">
+                </label>
+              </div>
+              <div>
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments"  name="comment" placeholder="Enter your comment here..." class="form"></textarea>
+              </div>
+              <div>
+                <input type="submit" id="submit" class="form"> 
+              </div>
+        </form>
+      </header>
+    </div>
+  </body>
+</html>
